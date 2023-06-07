@@ -14,7 +14,7 @@ const Home = () => {
             {/* Developer */}
             {/* -ReactJS */}
           </h4>
-          <p className="text-gray py-4 max-w-md">
+          <p className="text-[#7989a1] py-4 max-w-md ">
             I have 1 years of experience in web development. Currently, I love
             to work on web application using technologies like React, Tailwind,
             MaterialUI.

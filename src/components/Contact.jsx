@@ -1,19 +1,22 @@
+import { Grid } from "@mui/material";
 import React from "react";
 
 const Contact = () => {
   return (
     <div
       name="contact"
-      className="w-full h-screen bg-[#203b63] flex justify-center items-center p-4"
+      className="w-full h- bg-[#203b63] flex justify-center items-center p-4"
     >
       <div className="flex flex-col max-w-[600px] w-full">
-        <div className="pb-8 flex flex-col justify-center w-full h-full items-center">
-          <p className="text-4xl font-bold inline border-b-4 border-cyan-500 text-gray-300">
+        <Grid 
+        // className="pb-8 flex flex-col justify-start w- h-full items-center"
+        className="h-105 w-fit  pb-8  flex flex-col text-center box-border">
+          <p className="text-4 font-bold inline border-r-4 pr-5 border-cyan-500 text-gray-300 ">
             Contact
           </p>
-          <p className="text-gray-300 py-4">Send me a message</p>
-        </div>
-        <input
+          {/* <p className="text-gray-300 py-4">Send me a message</p> */}
+        </Grid>
+        {/* <input
           className="bg-[#ccd6f6] p-2"
           type="text"
           placeholder="Name"
@@ -33,7 +36,7 @@ const Contact = () => {
         ></textarea>
         <button className="text-white border-2 hover:bg-cyan-500 hover:border-cyan-500 px-4 py-3 my-8 mx-auto flex items-center">
           Let's Collaborate
-        </button>
+        </button> */}
       </div>
     </div>
   );
