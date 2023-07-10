@@ -17,10 +17,9 @@ const Navbar = () => {
   const handleClick = () => setNav(!nav);
 
   return (
-    <div className="absolute w-full h-[80px] md:h-[60px] sm:h-[40px] flex justify-between items-center px-4 bg-[#0a192f] text-gray-300">
+    <div className="absolute w-full h-[80px] md:h-[60px] sm:h-[40px] flex justify-between items-center px-4  text-gray-300 ">
       <div>
-        
-        <h1 className=" font-thin text-2xl italic font-mono">My Portfolio</h1>
+        <h1 className=" font-thin text-2xl font-mono">My Portfolio</h1>
       </div>
       {/* menu */}
       <ul className="hidden md:flex gap-x-8">
@@ -59,7 +58,7 @@ const Navbar = () => {
         className={
           !nav
             ? "hidden"
-            : "absolute top-0 left-0 w-full h-screen bg-[#0a192f] flex flex-col justify-center items-center"
+            : "fixed top-0 left-0 w-full h-screen bg-[#356cd3] flex flex-col justify-center items-center"
         }
       >
         <li className="py-6 text-4xl">
@@ -85,15 +84,26 @@ const Navbar = () => {
             Work
           </Link>
         </li>
-        {/* <li className="py-6 text-4xl">
-          {" "}
-          <Link onClick={handleClick} to="contact" smooth={true} duration={500}>
-            Contact
-          </Link>
-        </li> */}
+        {/* <li></li> */}
+        <li className="flex py-6 text-[30px] gap-x-6 max-w-max mx-auto">
+          <a  href="https://github.com/IshaqIsco22">
+            <FaGithub />
+          </a>
+
+          <a href="https://www.linkedin.com/in/ishaq-i/">
+            <FaLinkedin />
+          </a>
+          <a href="mailto: ishaqisco22@gmail.com">
+            <HiOutlineMail />
+          </a>
+          <a href="Ishaq_I.pdf">
+            <BsFillPersonLinesFill />
+          </a>
+        </li>
       </ul>
+
       {/* Social icons */}
-      <div className="hidden lg:flex fixed flex-col top-[35%] left-0">
+      <div className={"hidden lg:flex fixed flex-col top-[35%] left-0"}>
         <ul>
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-blue-600">
             <a
@@ -111,18 +121,18 @@ const Navbar = () => {
               Github <FaGithub size={30} />
             </a>
           </li>
-          {/* // <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#6fc2b0]">
-          //   <a
-          //     className="flex justify-between items-center w-full text-gray-300"
-          //     href="https://mail.google.com/mail/u/3/#inbox?compose=new/"
-          //   >
-          //     Email <HiOutlineMail size={30} />
-          //   </a>
-          // </li> */}
+          <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#6fc2b0]">
+            <a
+              className="flex justify-between items-center w-full text-gray-900"
+              href="mailto: ishaqisco22@gmail.com"
+            >
+              Email <HiOutlineMail size={30} style={{ color: "black" }} />
+            </a>
+          </li>
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-[#565f69]">
             <a
               className="flex justify-between items-center w-full text-gray-300"
-              href="Ishaq_I_Resume.pdf"
+              href="Ishaq_I.pdf"
               download
             >
               Resume <BsFillPersonLinesFill size={30} />

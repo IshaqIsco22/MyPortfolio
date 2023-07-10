@@ -6,6 +6,10 @@ export default {
       fontFamily: {
         body: ["Raleway"],
       },
+      screens: {
+        xs: "< 640px",
+        // 1711px x 807px
+      },
     },
     accentColor: ({ theme }) => ({
       ...theme("colors"),
@@ -44,6 +48,7 @@ export default {
     backdropSepia: ({ theme }) => theme("sepia"),
     backgroundColor: ({ theme }) => theme("colors"),
     backgroundImage: {
+      site: "url(./assets/site2.jpg)",
       none: "none",
       "gradient-to-t": "linear-gradient(to top, var(--tw-gradient-stops))",
       "gradient-to-tr":
@@ -793,7 +798,6 @@ export default {
       150: "1.5",
     },
     screens: {
-      ssm: "500px",
       sm: "640px",
       md: "768px",
       lg: "1024px",
