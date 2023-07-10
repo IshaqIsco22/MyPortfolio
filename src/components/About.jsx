@@ -14,9 +14,10 @@ const About = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.3 }}
-              className="lg:text-right pb-8 pl-44 sm:text-left sm:ml-[-5px] xs:pl-44 xs:text-center"
+              // className="lg:text-left pb-8 pl-44 xs:pl-44 xs:text-center"
+              className="sm:text-right pb-8 pl-4"
             >
-              <p className="text-4xl font-bold inline border-b-4  border-pink-200 sm:ml-[10px] ">
+              <p className="text-4xl font-bold inline border-b-4  border-pink-200  ">
                 About
               </p>
             </motion.div>
@@ -40,9 +41,10 @@ const About = () => {
               className="lg:text-left sm:text-center"
             >
               <p className="text-black">
-                I have 1 years of experience in web development. Currently, I
-                love to work on web application using technologies like React,
-                Tailwind, MaterialUI.
+                I have 1 years of experience in web development. I am very
+                passionate about learning programming & developing websites.
+                Currently, I love to work on web application using technologies
+                like React, Tailwind, MaterialUI.
               </p>
             </motion.div>
           </div>

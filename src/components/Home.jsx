@@ -4,6 +4,9 @@ import Icon512 from "../assets/Icon512.png";
 import { Link } from "react-scroll";
 import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
+import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { HiOutlineMail } from "react-icons/hi";
+import { BsFillPersonLinesFill } from "react-icons/bs";
 import { TypeAnimation } from "react-type-animation";
 
 const Home = () => {
@@ -127,7 +130,7 @@ const Home = () => {
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.7 }}
-            className="text-[#292e36] py-4 max-w-md "
+            className=" text-[#292e36] py-4 max-w-md "
           >
             {/* I have 1 years of experience in web development. Currently, I love
             to work on web application using technologies like React, Tailwind,
@@ -141,6 +144,21 @@ const Home = () => {
             in shaping the future of the web, delivering seamless functionality
             and professional aesthetics to businesses and individuals. */}
           </motion.p>
+          {/* <motion.div className="flex text-[30px] py-4 gap-x-6 max-w-max lg:hidden ">
+            <a href="https://github.com/IshaqIsco22">
+              <FaGithub />
+            </a>
+
+            <a href="https://www.linkedin.com/in/ishaq-i/">
+              <FaLinkedin />
+            </a>
+            <a href="mailto: ishaqisco22@gmail.com">
+              <HiOutlineMail />
+            </a>
+            <a href="Ishaq_I.pdf">
+              <BsFillPersonLinesFill />
+            </a>
+          </motion.div> */}
           <motion.div
             variants={fadeIn("up", 0.6)}
             initial="hidden"
