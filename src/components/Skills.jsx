@@ -41,10 +41,10 @@ const Skills = () => {
           </motion.p>
         </div>
         {/* Skill Grid */}
-        <div className="w-full grid grid-cols-2 sm:grid-cols-4 gap-4 text-center py-8">
+        <div className="w-full grid grid-cols-2 sm:grid-cols-3 gap-4 text-center py-8">
           {/* fade left */}
           <motion.div
-            variants={fadeIn("left", 0.3)}
+            variants={fadeIn("up", 0.4)}
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.7 }}
@@ -62,7 +62,7 @@ const Skills = () => {
             <p className="my-4">HTML</p>
           </motion.div>
           <motion.div
-            variants={fadeIn("left", 0.4)}
+            variants={fadeIn("up", 0.4)}
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.7 }}
@@ -80,7 +80,7 @@ const Skills = () => {
             <p className="my-4">CSS</p>
           </motion.div>
           <motion.div
-            variants={fadeIn("left", 0.5)}
+            variants={fadeIn("up", 0.4)}
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.7 }}
@@ -94,7 +94,7 @@ const Skills = () => {
             <p className="my-4 ">JAVASCRIPT</p>
           </motion.div>
           <motion.div
-            variants={fadeIn("left", 0.6)}
+            variants={fadeIn("up", 0.4)}
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.7 }}
@@ -113,7 +113,7 @@ const Skills = () => {
           </motion.div>
           {/* fade right */}
           <motion.div
-            variants={fadeIn("right", 0.6)}
+            variants={fadeIn("up", 0.4)}
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.7 }}
@@ -131,7 +131,7 @@ const Skills = () => {
             <p className="my-4">SASS</p>
           </motion.div>
           <motion.div
-            variants={fadeIn("right", 0.5)}
+            variants={fadeIn("up", 0.4)}
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.7 }}
@@ -148,7 +148,7 @@ const Skills = () => {
             <p className="my-4">GITHUB</p>
           </motion.div>
           <motion.div
-            variants={fadeIn("right", 0.4)}
+            variants={fadeIn("up", 0.4)}
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.7 }}
@@ -166,7 +166,7 @@ const Skills = () => {
             <p className="my-4">TAILWIND CSS</p>
           </motion.div>
           <motion.div
-            variants={fadeIn("right", 0.3)}
+            variants={fadeIn("up", 0.4)}
             initial="hidden"
             whileInView={"show"}
             viewport={{ once: false, amount: 0.7 }}
